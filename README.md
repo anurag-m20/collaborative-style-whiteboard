@@ -218,9 +218,6 @@ collaborative-style-whiteboard/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
-```
-
-> The exact contents of `src/` may change as the project evolves.
 
 ---
 
