@@ -2,9 +2,9 @@
 
 A feature-rich **single-user digital whiteboard** built with **React and HTML5 Canvas**.
 
-The project provides an interactive canvas where users can draw, create shapes, add text and sticky notes, move and resize elements, manage layers, group objects, undo/redo actions, save work locally, and export the whiteboard as a PNG image.
+The application provides an interactive canvas where users can draw, create shapes, add text and sticky notes, move and resize elements, manage layers, group objects, undo/redo actions, save work locally, and export the whiteboard as a PNG image.
 
-> 🚀 Built as a hands-on React project to understand Canvas API, state management, coordinate systems, event handling, and interactive UI design.
+> 🚀 Built as a hands-on React project to understand Canvas API, state management, coordinate systems, event handling, and interactive UI development.
 
 ---
 
@@ -12,12 +12,12 @@ The project provides an interactive canvas where users can draw, create shapes, 
 
 ### 🎨 Drawing & Shapes
 
-* ✏️ Freehand drawing
-* ▭ Rectangle tool
-* ◯ Circle tool
-* 📏 Line tool
-* 📝 Text tool
-* 🟨 Sticky notes
+* Freehand drawing
+* Rectangle tool
+* Circle tool
+* Line tool
+* Text tool
+* Sticky notes
 * Automatic text wrapping inside sticky notes
 * Manual line breaks in sticky notes
 
@@ -87,20 +87,18 @@ The application supports keyboard shortcuts for common operations such as:
 
 ## 🛠️ Tech Stack
 
-| Technology           | Purpose                             |
-| -------------------- | ----------------------------------- |
-| **React**            | UI and application state management |
-| **JavaScript**       | Application logic                   |
-| **HTML5 Canvas API** | Drawing and rendering               |
-| **CSS**              | Styling and layout                  |
-| **Vite**             | Development and build tool          |
-| **localStorage**     | Local persistence                   |
+| Technology       | Purpose                             |
+| ---------------- | ----------------------------------- |
+| React            | UI and application state management |
+| JavaScript       | Application logic                   |
+| HTML5 Canvas API | Drawing and rendering               |
+| CSS              | Styling and layout                  |
+| Vite             | Development and build tool          |
+| localStorage     | Local data persistence              |
 
 ---
 
 ## 🧠 Core Concepts Implemented
-
-This project focuses on understanding how interactive graphical applications work internally.
 
 ### React State Management
 
@@ -118,21 +116,19 @@ React state is used to manage:
 
 `useRef` is used for values that need to persist between renders without triggering unnecessary re-renders.
 
-Examples:
+Examples include:
 
 * Canvas reference
 * Current elements reference
 * Selection reference
 * Zoom reference
-* Pan reference
+* Pan position
 * Current interaction state
 * Temporary drawing state
 
 ### Canvas Rendering
 
-The canvas is redrawn whenever the application state changes.
-
-The rendering process:
+The canvas is redrawn whenever the relevant application state changes.
 
 ```text
 React State
@@ -143,14 +139,12 @@ Canvas Redraw
      ↓
 Individual Elements
      ↓
-Pixels on Canvas
+Canvas Rendering
 ```
 
 ### Coordinate Transformation
 
-The project converts between screen coordinates and world/canvas coordinates while handling zoom and pan.
-
-Conceptually:
+The project converts between screen coordinates and canvas/world coordinates while handling zoom and pan.
 
 ```text
 Screen Coordinates
@@ -166,21 +160,21 @@ This allows objects to remain interactive even after zooming and panning.
 
 ### Hit Testing
 
-When the user clicks on the canvas, the application determines which element was clicked.
-
-Different element types use different bounding or geometric checks:
+When the user interacts with the canvas, the application determines which element is being targeted.
 
 ```text
 Mouse Position
       ↓
 Check Elements
       ↓
-Hit Test
+Hit Testing
       ↓
-Selected Element
+Target Element
 ```
 
-### Custom Undo / Redo
+Different element types use appropriate geometric and bounding-box calculations.
+
+### Undo / Redo
 
 The application maintains custom history and redo stacks.
 
@@ -194,9 +188,9 @@ User Action
 New State
 ```
 
-Undo moves the current state into the redo stack and restores the previous state.
+Undo restores a previous state while moving the current state into the redo stack.
 
-A new action after undo clears the redo stack.
+When a new action is performed after undo, the redo stack is cleared.
 
 ---
 
@@ -218,10 +212,15 @@ collaborative-style-whiteboard/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
+```
 
 ---
 
 ## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed.
 
 ### 1. Clone the repository
 
@@ -249,7 +248,7 @@ npm run dev
 
 ### 5. Open the application
 
-Vite will provide a local development URL, usually similar to:
+Vite will provide a local development URL, usually:
 
 ```text
 http://localhost:5173
@@ -259,7 +258,7 @@ http://localhost:5173
 
 ## 🎯 Learning Objectives
 
-This project was built to gain practical experience with:
+This project was developed to gain practical experience with:
 
 * React component-based development
 * React Hooks
@@ -275,8 +274,8 @@ This project was built to gain practical experience with:
 * State synchronization
 * Undo/redo architecture
 * Local storage
-* Client-side file/image export
-* Interactive UI design
+* Client-side image export
+* Interactive UI development
 
 ---
 
@@ -291,7 +290,7 @@ Possible future improvements include:
 * Multiple boards
 * Custom colors and brush sizes
 * Advanced text formatting
-* Better touch/mobile support
+* Better touch and mobile support
 * Real-time cursors for multiple users
 * Backend-based board storage
 * Collaborative conflict resolution
@@ -306,21 +305,21 @@ This version is designed as a **single-user local whiteboard**.
 * There is currently no real-time multi-user collaboration.
 * Data is not synchronized between different devices.
 * Advanced text formatting is limited.
-* Canvas rendering is currently focused on desktop interaction.
+* The current implementation is primarily designed for desktop interaction.
 
 ---
 
 ## 📌 Project Status
 
-**Status: Completed — Portfolio Ready**
+**Status: Completed**
 
-The current version includes the core whiteboard functionality, editing tools, object management, persistence, export, and interaction features.
+The current version includes the core whiteboard functionality, editing tools, object management, persistence, export, and interactive canvas features.
 
 ---
 
 ## 👨‍💻 Author
 
-**ANURAG MISHRA*
+**Anurag Mishra**
 
 B.Tech — Computer Science & Engineering
 
@@ -336,4 +335,4 @@ Interested in:
 
 ## ⭐ Acknowledgements
 
-Built as a learning and portfolio project while exploring **React, JavaScript, a**
+Built as a learning and portfolio project while exploring **React, JavaScript, and the HTML5 Canvas API**.
