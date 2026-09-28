@@ -266,21 +266,24 @@ Screenshots will be added here to demonstrate the main features of the applicati
 
 ### Main Whiteboard
 
-![Main Whiteboard](screenshots/dashboard.png)
+![Main Whiteboard](<img width="1920" height="1080" alt="Screenshot 2026-09-28 142254" src="https://github.com/user-attachments/assets/7fee2d95-3f67-4835-b1a4-7ec0b2bfed24" />
+)
 
 ### Drawing & Shapes
 
-![Drawing and Shapes](screenshots/drawing.png)
+![Drawing and Shapes](<img width="1920" height="1080" alt="Screenshot 2026-09-27 205805" src="https://github.com/user-attachments/assets/b8f9828b-884e-4a65-a0ad-01510a28d62b" />
+)
 
 ### Sticky Notes
 
-![Sticky Notes](screenshots/sticky-notes.png)
+![Sticky Notes](<img width="1920" height="1080" alt="Screenshot 2026-09-27 205805" src="https://github.com/user-attachments/assets/ce64f66a-ff6c-4ed2-b101-3de97d00e4b8" />
+)
 
 ### Layers & Selection
 
-![Layers and Selection](screenshots/layers.png)
+![Layers and Selection](<img width="1920" height="1080" alt="Screenshot 2026-09-27 205805" src="https://github.com/user-attachments/assets/93100f05-c53c-41e1-877b-0450a24ab107" />
+)
 
-> Add actual screenshots to the `screenshots/` folder and update the filenames above if necessary.
 
 ---
 
