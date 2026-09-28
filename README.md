@@ -323,7 +323,7 @@ The current version includes the core whiteboard functionality, editing tools, o
 
 ## 👨‍💻 Author
 
-**Siddharth Darindat**
+**ANURAG MISHRA*
 
 B.Tech — Computer Science & Engineering
 
